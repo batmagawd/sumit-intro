@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUMIT | Intro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="particles"></div>
+
+  <main class="card">
+    <div class="sun">☀</div>
+
+    <div class="avatar-wrap">
+      <div class="avatar">
+        <img src="profile.jpg" alt="Profile photo" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+      </div>
+      <span class="status">● online</span>
+    </div>
+
+    <h1>S U M I T</h1>
+    <p class="username">@ T4HKR · THAKUR</p>
+    <div class="line"></div>
+    <p class="quote">वीर भोग्या वसुन्धरा</p>
+
+    <div class="tags">
+      <button>CODER</button>
+      <button>GAMER</button>
+      <button>THAKUR</button>
+      <button>BUILDER</button>
+    </div>
+
+    <div class="player">
+      <div class="music-icon">♫</div>
+      <div class="song-info">
+        <strong>MY SONG</strong>
+        <span>Your Audio</span>
+      </div>
+      <button id="playBtn" class="play">▶</button>
+    </div>
+
+    <audio id="audio" src="music.mp3" preload="metadata"></audio>
+    <p class="hint">Tap ▶ to play music</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

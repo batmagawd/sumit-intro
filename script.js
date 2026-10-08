@@ -1,20 +1,4 @@
-const audio = document.getElementById("audio");
-const playBtn = document.getElementById("playBtn");
-
-playBtn.addEventListener("click", async () => {
-  if (audio.paused) {
-    try {
-      await audio.play();
-      playBtn.textContent = "❚❚";
-    } catch (e) {
-      alert("Add your audio file as music.mp3 in this folder.");
-    }
-  } else {
-    audio.pause();
-    playBtn.textContent = "▶";
-  }
-});
-
-audio.addEventListener("ended", () => {
-  playBtn.textContent = "▶";
-});
+const audio=document.getElementById("audio"),play=document.getElementById("play"),bar=document.getElementById("bar"),disc=document.getElementById("disc");
+play.onclick=async()=>{if(audio.paused){try{await audio.play();play.textContent="❚❚";disc.classList.add("playing")}catch(e){alert("Music file not found. Keep music.mp3 in the same folder.")}}else{audio.pause();play.textContent="▶";disc.classList.remove("playing")}};
+audio.ontimeupdate=()=>{if(audio.duration)bar.style.width=(audio.currentTime/audio.duration*100)+"%"};
+audio.onended=()=>{play.textContent="▶";disc.classList.remove("playing");bar.style.width="0"};

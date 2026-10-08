@@ -1,14 +1,4 @@
-# SUMIT Intro Website
-
-## Files
-- index.html = website
-- style.css = design/animation
-- script.js = music player
-- profile.jpg = add your profile photo here
-- music.mp3 = add your own/licensed audio here
-
-## Run
-Open index.html in a browser to test.
-
-## Vercel
-Upload this folder/project to a GitHub repository and import the repository into Vercel.
+SUMIT AGGARWAL Intro Website
+Files: index.html, style.css, script.js, profile.jpg, music.mp3
+Upload all files to the root of your GitHub repository.
+Vercel will redeploy automatically after the GitHub commit.

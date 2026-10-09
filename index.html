@@ -7,36 +7,86 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="stars"></div>
+
 <main class="card">
+
   <div class="sun">❄️</div>
+
   <div class="avatar-wrap">
-    <div class="avatar"><img src="profile.jpg" alt="Sumit Aggarwal"></div>
+    <div class="avatar">
+      <img src="profile.jpg" alt="Sumit Aggarwal">
+    </div>
     <span class="status">● online</span>
   </div>
 
   <h1>SUMIT</h1>
   <p class="username">✦ AGGARWAL ✦</p>
   <p class="tg">@iamIund</p>
+
   <div class="line"></div>
+
   <p class="quote">𓆩 कट्टर हिन्दू • सुमित 𓆪</p>
 
   <div class="tags">
-    <span>CODER</span><span>GAMER</span><span>AGGARWAL</span><span>BUILDER</span>
+    <span>CODER</span>
+    <span>GAMER</span>
+    <span>AGGARWAL</span>
+    <span>BUILDER</span>
   </div>
 
+  <!-- EXISTING MUSIC PLAYER -->
   <section class="player">
     <div class="disc" id="disc">♫</div>
+
     <div class="song">
       <b>MANAVE</b>
       <small>SUMIT • MUSIC</small>
-      <div class="progress"><i id="bar"></i></div>
+      <div class="progress">
+        <i id="bar"></i>
+      </div>
     </div>
-    <button id="play">▶</button>
+
+    <button id="play" aria-label="Play or pause">▶</button>
   </section>
+
   <p class="hint">Tap the button to play / pause</p>
   <audio id="audio" src="music.mp3" preload="metadata"></audio>
+
+  <!-- NEW MUSIC SECTION -->
+  <section class="media-section">
+    <h2>❄️ MORE MUSIC</h2>
+
+    <div class="media-card">
+      <div class="media-icon">🎵</div>
+      <h3>SUMIT • MUSIC</h3>
+      <p class="media-subtitle">NOW PLAYING</p>
+
+      <audio controls preload="metadata">
+        <source src="newsong.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </div>
+  </section>
+
+  <!-- NEW VIDEO SECTION -->
+  <section class="media-section">
+    <h2>❄️ MY VIDEO</h2>
+
+    <div class="media-card">
+      <video controls playsinline preload="metadata">
+        <source src="myvideo.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+
+      <h3>SUMIT • VIDEO</h3>
+      <p class="media-subtitle">MY LATEST VIDEO</p>
+    </div>
+  </section>
+
 </main>
+
 <script src="script.js"></script>
 </body>
 </html>
